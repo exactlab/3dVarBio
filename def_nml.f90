@@ -64,7 +64,7 @@ subroutine def_nml
 ! Open the namelist
 ! ---
 
-  open(11,file='var_3d_nml',form='formatted')
+  open(11,file='var_3d_nml',form='formatted',status='old',action='read')
 
   ! ---
   read(11,ctllst)
